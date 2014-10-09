@@ -1,0 +1,138 @@
+
+
+
+.left_side{
+    background-color:#48A7C5;
+    padding: 20px;
+}
+
+.right_side{
+    padding:0px;
+}
+.logo{
+    max-width:280px;
+}
+img{
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+.vignette{
+  padding: 0px 30px 18px 30px;
+  max-width:280px;
+  vertical-align: middle;
+}
+
+
+#counter{
+    visibility:hidden;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.left_side a {
+color: white;
+}
+
+.left_side a:hover{
+color: #428bca;
+}
+.out_link{
+    padding: 20px 20px 28px 20px;
+}
+.soc_link_img{
+    width:53px;
+}
+.page {
+    margin: 0 auto;
+    width: 1280px;
+}
+.yandex_metrika{
+     position: relative;
+     top: 20px;
+     left :20px;
+}
+.text_frontpage{
+    color:white;
+    font-size: 20px;
+    position: relative;
+     top: -200px;
+     left :20px;
+}
+.hatcolor{
+    padding: 20px;
+    float:  top;
+    background-color:#48A7C5;
+   color: white;
+    
+}
+
+.copyright{
+    position: relative;
+    top: 25px;
+    color: white;
+
+}
+body {
+    font-family: Georgia, sans-serif;
+    background-image: url(/static/image/fon.jpg);
+    background-size:cover;
+    background-repeat:  no-repeat;
+    background-position:  top center;
+    background-attachment:  fixed;
+    position: absolute;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    
+}
+
+.authors{
+    color:white;
+    padding-bottom: 0px;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.topMenu {
+    float:left;
+    padding: 20px 0 15px 20px;
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+.topMenu li{
+    padding: 5px 0 2px 0;
+    border-bottom: 1px solid ; /* Параметры линии под текстом */
+    font-weight: normal;
+ }
+.nav > li > a {
+position: relative;
+display: block;
+padding: 0px;
+}
+
+
+
+p {
+    margin: 0; 
+    padding-bottom: 5px;
+}
+ul.unstyled{
+    margin-left:20px;
+}
+ul.unstyled li{
+        border-bottom: 0px solid ; /* Параметры линии под текстом */
+        padding-bottom: 3px;
+
+}
+
+
+label{
+display: block;
+}

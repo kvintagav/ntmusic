@@ -1,0 +1,10 @@
+{%  extends 'index.html' %}
+{% load staticfiles %}
+
+
+{% block section %}
+<h3>{{ event.event_name }}</h3>
+
+<h4>{{ event.id }}</h4>
+<p>{{ event.event_date }}</p>
+{% endblock %}

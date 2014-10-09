@@ -1,0 +1,25 @@
+{%  extends 'index.html' %}
+{% load staticfiles %}
+
+{% block title %}
+Афиша музыкального салона, предстоящие события
+{% endblock %}
+{% block section %}
+
+
+{% for event in events %}
+    <a href="/afisha/event/{{ event.id}}">{{ event.event_name }}</a>
+    <p>{{ event.event_date }}<p>
+    <p>Счетчик событий: {{forloop.counter}}</p>
+    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.event_visitors }}</p>
+    {% if not forloop.last %} 
+    	<hr>
+    {% endif %}
+
+
+{% empty %}
+	<p> Нет предстоящих событий</p>
+{% endfor %}
+
+
+{% endblock %}
