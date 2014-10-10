@@ -9,9 +9,9 @@
 
 	{% for event in events %}
 	    <!--<a href="/afisha/event/{{ event.id}}">{{ event.event_name }}</a>-->
-	    <a href="{%url 'afisha:one_event' event.id %}">{{ event.event_name }}</a>
-	    <p>{{ event.event_date }}<p>
-	    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.event_visitors }}</p>
+	    <a href="{%url 'afisha:one_event' event.id %}">{{ event.ame }}</a>
+	    <p>{{ event.date }}<p>
+	    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.visitors }}</p>
 	    <hr>
 	{% empty%}
 		<p> Нет предстоящих событий</p>
