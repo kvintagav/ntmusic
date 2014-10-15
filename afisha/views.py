@@ -4,13 +4,24 @@ from django.template.loader import get_template
 from django.template import Context
 from django.shortcuts import render_to_response
 from afisha.models import Event
+from django.utils import timezone
+
 # Create your views here.
 
 def all(request):
     return render_to_response('all.html',{'events': Event.objects.all()})
 
 def coming(request):
-	return render_to_response('coming.html',{'events': Event.objects.all()})
+	all_events=Event.objects.filter(date__gte=timezone.now())
+	right = []
+	left = []
+	for index in range(len(lis)):
+		if index%2 :
+			right.append(all_events[i])
+		else 
+			left.append(all_events[i])
+	return render_to_response('coming.html',{'events_left':left,'events_right':right})
+	
 
 def event(request,event_id=1):
 	try:
@@ -25,3 +36,5 @@ def archives(request):
     return HttpResponse("hello archives")
 
 
+def response(request):
+	return HttpResponse("Текущая страница %s" % request.path)

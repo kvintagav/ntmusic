@@ -4,8 +4,8 @@ from afisha.models import Event
 # Register your models here.
 
 class EventAdmin(admin.ModelAdmin):
-    fields = ['event_name', 'event_date', 'event_visitors','event_desc']
-    list_display = ('event_name', 'event_date', 'event_visitors','event_desc')
-    list_filter = ['event_date']
+    fields = ['name', 'date', 'visitors','desc']
+    list_display = ('name', 'date', 'visitors','desc')
+    list_filter = ['date']
 
 admin.site.register(Event, EventAdmin)
