@@ -6,18 +6,38 @@
 {% endblock %}
 {% block section %}
 
-	{% for event in events %}
-	    <a href="/afisha/event/{{ event.id}}">{{ event.name }}</a>
-	    <p>{{ event.date }}<p>
-	    <p>Счетчик событий: {{forloop.counter}}</p>
-	    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.visitors }}</p>
-	    {% if not forloop.last %} 
-	    	<hr>
-	    {% endif %}
+<div>
+	<div class="col-sm-6 ">
+	{% for num,event in events %}
+		{% if num == 0%}
 
-
+		    <a href="/afisha/event/{{ event.id}}">{{ event.name }}</a>
+		    <p>{{ event.date }}<p>
+		    <p>Счетчик событий: {{forloop.counter}}</p>
+		    
+		    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.visitors }}</p>
+		    
+		{% endif %}    
 	{% empty %}
-		<p> Нет предстоящих событий</p>
+		<p> Нет предстоящих событий.</p>
+		<p> Появятся, когда будут.</p>
+		
+	{% endfor %}
+	</div>
+
+	<div class="col-sm-6">
+
+	{% for num,event in events %}
+		{% if num == 1%}
+		    <a href="/afisha/event/{{ event.id}}">{{ event.name }}</a>
+		    <p>{{ event.date }}<p>
+		    <p>Счетчик событий: {{forloop.counter}}</p>
+		    <p><img src="{% static "men.png" %}" width="25px" hieght="25px" > {{ event.visitors }}</p>
+		    
+		 {% endif %}   	
 	{% endfor %}
 
+
+	</div>
+</div>
 {% endblock %}

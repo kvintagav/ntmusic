@@ -13,14 +13,14 @@ def all(request):
 
 def coming(request):
 	all_events=Event.objects.filter(date__gte=timezone.now())
-	right = []
-	left = []
-	for index in range(len(lis)):
-		if index%2 :
-			right.append(all_events[i])
-		else 
-			left.append(all_events[i])
-	return render_to_response('coming.html',{'events_left':left,'events_right':right})
+	events_column=[]
+	for index in range(len(all_events)):
+		event = []
+		event.append(index%2)
+		event.append(all_events[index])
+		events_column.append(event)
+
+	return render_to_response('coming.html',{'events':events_column})
 	
 
 def event(request,event_id=1):
