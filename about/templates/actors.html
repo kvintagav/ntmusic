@@ -1,0 +1,19 @@
+{%  extends 'about.html' %}
+{% load staticfiles %}
+{% block title %}
+	{{ actor.title}}
+{% endblock %}
+
+{% block section %}
+
+
+	{% for actor  in actors %}
+	<p>{{actor.name}}</p>
+
+	{% empty %}
+		<p> Нет предстоящих событий.</p>
+		<p> Появятся, когда будут.</p>
+		
+	{% endfor %}
+
+{%endblock %}

@@ -1,0 +1,31 @@
+{%  extends 'about.html' %}
+{% load staticfiles %}
+{% block title %}
+	{{ actor.title}}
+{% endblock %}
+
+{% block section %}
+
+
+<div>
+	<div class="col-sm-6 ">
+		
+		<a href= "{% url 'about:Nadezhda'%}"  > Надежда </a>
+
+	</div>
+	<div class="col-sm-6 ">
+		
+		<a href= "{% url 'about:Tatyana'%}"  > Татьяна </a>
+
+	</div>
+
+</div>
+<div>
+	{{actor.desc}}
+
+
+</div>
+
+<a href="{% url 'about:actors' %}">Гости музыкального салона</a>
+
+{%endblock %}

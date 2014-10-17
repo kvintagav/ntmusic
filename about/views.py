@@ -8,6 +8,17 @@ from about.models import Actor
 
 # Create your views here.
 
-def chef(request,name):
-    return render_to_response('chef.html',{'events': Event.objects.get(name__exact=name)})
+def hostess(request):
+	HOSTESS = Actor.objects.get(name_English__exact='Hostess')
+	header = HOSTESS.name 
+	return render_to_response('hostess.html',{'actor': HOSTESS , 'header' : header})
+	
 
+def chef(request,name):
+	CHEF = Actor.objects.get(name_English__exact=name)
+	header = CHEF.name
+	return render_to_response('chef.html',{'actor':  CHEF , 'header': header})
+    
+def actors(request):
+	header = " Гости музыкального салона"
+	return render_to_response('actors.html',{'actors': Actor.objects.filter(chef__exact=False), 'header':header})

@@ -13,8 +13,10 @@ urlpatterns = patterns('',
     #url(r'^article/', include('article.urls')),
 
     url(r'^afisha/', include('afisha.urls',namespace="afisha")),
+    url(r'^about/',include('about.urls', namespace ="about")),
+    url(r'^contacts/', include('contacts.urls',namespace="contact")),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', include ('top.urls'), name="home"),
+    url(r'^$', include ('top.urls', namespace="top")),
 
 
 )

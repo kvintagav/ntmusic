@@ -8,7 +8,7 @@ class Actor(models.Model):
     name_English = models.CharField(_(u'name_English '),max_length=200)
     name = models.CharField(_(u'name '),max_length=200)
     desc = models.TextField(_(u'description'))
-    title = models.TextField(_(u'title'))
+    title = models.TextField(_(u'title'),max_length=1000)
     chef = models.BooleanField( default = False)
 
     """изображение"""

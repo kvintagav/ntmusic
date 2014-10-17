@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'afisha',
     'about',
     'top',
+    'contacts',
     
     
 )
