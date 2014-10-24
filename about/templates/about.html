@@ -4,11 +4,14 @@
 	Артисты музыкального салона
 {% endblock %}
 {% block component %}
-<h3> О нас</h3>
+<div class = " component">
+{%include "header.html"  with header="О нас"%}
 
 
 <h4> {{header}}</h4>
 	{% block section %}
 
 	{%endblock %}
+
+</div
 {% endblock %}

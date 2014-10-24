@@ -4,9 +4,16 @@
 	Афиша музыкального салона
 {% endblock %}
 {% block component %}
-<div>Афиша</div>
+
+<div class="component">
+
+{%include "header.html"  with header="Афиша"%}
 
 	{% block section %}
 
 	{%endblock %}
+</div>
+
+
+
 {% endblock %}

@@ -1,16 +1,9 @@
 
 
 
-.left_side{
-    background-color:#48A7C5;
-    padding: 20px;
-}
 
 .right_side{
     padding:0px;
-}
-.logo{
-    max-width:280px;
 }
 img{
     max-width: 100%;
@@ -18,12 +11,6 @@ img{
     height: auto;
     vertical-align: middle;
     border: 0;
-}
-
-.vignette{
-  padding: 0px 30px 18px 30px;
-  max-width:280px;
-  vertical-align: middle;
 }
 
 
@@ -35,28 +22,15 @@ img{
     padding: 0;
 }
 
-.left_side a {
-color: white;
+.component{
+    padding:30px;
 }
 
-.left_side a:hover{
-color: #428bca;
-}
-.out_link{
-    padding: 20px 20px 28px 20px;
-}
-.soc_link_img{
-    width:53px;
-}
 .page {
     margin: 0 auto;
     width: 1280px;
 }
-.yandex_metrika{
-     position: relative;
-     top: 20px;
-     left :20px;
-}
+
 .text_frontpage{
     color:white;
     font-size: 20px;
@@ -64,20 +38,8 @@ color: #428bca;
      top: -200px;
      left :20px;
 }
-.hatcolor{
-    padding: 20px;
-    float:  top;
-    background-color:#48A7C5;
-   color: white;
-    
-}
 
-.copyright{
-    position: relative;
-    top: 25px;
-    color: white;
 
-}
 body {
     font-family: Georgia, sans-serif;
     background-image: url(/static/image/fon.jpg);
@@ -91,30 +53,6 @@ body {
     min-height: 100%;
     display: block;
     
-}
-
-.authors{
-    color:white;
-    padding-bottom: 0px;
-    font-size: 12px;
-    padding-left: 20px;
-}
-.topMenu {
-    float:left;
-    padding: 20px 0 15px 20px;
-    color:white;
-    font-size:20px;
-    text-decoration: none;
-}
-.topMenu li{
-    padding: 5px 0 2px 0;
-    border-bottom: 1px solid ; /* Параметры линии под текстом */
-    font-weight: normal;
- }
-.nav > li > a {
-position: relative;
-display: block;
-padding: 0px;
 }
 
 
@@ -136,3 +74,34 @@ ul.unstyled li{
 label{
 display: block;
 }
+
+
+
+h1 {
+    margin:  0px;
+    position: relative;
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+  }
+  h1 > span {
+    display: inline-block;
+    margin: 0 .4em;
+  }
+  h1 > span:before,
+  h1 > span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid #48A7C5;
+    margin-top: .6em;
+  }
+  h1 > span:before {
+    margin-left: -102%;
+  }
+  h1 > span:after {
+    margin-left: 2%;
+  }
+  
+  

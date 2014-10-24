@@ -6,6 +6,7 @@
         <title>{% block title %} Музыкальный салон "У Н. и Т." | ntmusic.ru {% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css "%}" >
         <link rel="stylesheet" type="text/css" href="{% static "css/template.css "%}" >
+        <link rel="stylesheet" type="text/css" href="{% static "css/leftside.css "%}" >
 
         <meta name="description" content="Добро пожаловать в наш Музыкальный салон - мир старинного, классического и современного романса и камерной музыки">
         <meta name="keywords" content=" Надежда , Татьяна ,  музыкальный салон , романс , музыка , вокал , камерная музыка , концерт , тематический концерт , музыкальная гостиная , дед мороз , снегурочка">
@@ -50,7 +51,9 @@
 
             </div>
             <div class="col-sm-9 right_side">
-                {% block component  %}{% endblock %}
+                {% block component  %}
+
+                {% endblock %}
             </div>
         </div>
     </div>
