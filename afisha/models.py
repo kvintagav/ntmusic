@@ -1,6 +1,6 @@
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
-
+from datetime import datetime
 
 class Event(models.Model):
     class Meta():
